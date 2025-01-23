@@ -10,7 +10,7 @@ import nltk
 from nltk.stem import WordNetLemmatizer
 
 # Ensure all necessary NLTK data is downloaded
-nltk.download('punkt', quiet=True)  # Download 'punkt' for tokenization
+nltk.download('punkt_tab', quiet=True)  # Download 'punkt' for tokenization
 nltk.download('wordnet', quiet=True)  # Download 'wordnet' for lemmatization
 nltk.download('stopwords', quiet=True)  # Download stopwords if required later
 
