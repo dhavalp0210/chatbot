@@ -8,11 +8,11 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import nltk
 from nltk.stem import WordNetLemmatizer
-nltk.download('popular', quiet=True)
 
-# Uncomment these lines for first-time use
-# nltk.download('punkt')
-# nltk.download('wordnet')
+# Ensure all necessary NLTK data is downloaded
+nltk.download('punkt', quiet=True)  # Download 'punkt' for tokenization
+nltk.download('wordnet', quiet=True)  # Download 'wordnet' for lemmatization
+nltk.download('stopwords', quiet=True)  # Download stopwords if required later
 
 # Reading in the corpus
 with open('chatbot.txt', 'r', encoding='utf8', errors='ignore') as fin:
